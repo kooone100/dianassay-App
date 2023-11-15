@@ -1,0 +1,160 @@
+{% extends 'store/layout/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+     /* .card:hover{
+        transform:scale(1.8);
+        z-index:4;
+    } */
+    h1{
+        font-size: 38px;
+        font-style: italic;
+        font-family: trebuchet;
+        border-radius:38px;
+        /*text-align: center;*/
+    }
+
+
+</style>
+<div class="pt-3">
+    <div class="container">
+        <div class="row">
+            <h1 class="my-4 border-bottom pb-1 text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">GALLERY</h1>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 0.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 1.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 2.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 3.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 4.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 5.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 6.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 7.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 8.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 9.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 10.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="card">
+                    <a href="#">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'imageView/view 11.jpg' %}" alt="..." width="480" height="510">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center text-primary text-uppercase mt-5" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">project update photos coming soon.</h1>
+    </div>
+</div>
+
+{% endblock content %}

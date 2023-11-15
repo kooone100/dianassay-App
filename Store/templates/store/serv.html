@@ -1,0 +1,84 @@
+{% extends 'store/layout/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<html>
+<head>
+    <title>our services</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'icofont/icofont.min.css' %}" />
+<style>
+    h1{
+        font-size: 38px;
+        font-style: italic;
+        font-family: trebuchet;
+        border-radius:38px;
+        /*text-align: center;*/
+    }
+</style>
+</head>
+<div class="pt-3">
+    <div class="container">
+        <div class="row mt-4 pt-4">
+            <h1 class="text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">BUILD AND RENT HOUSE</h1>
+            <hr>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="{% static 'imageView/view 0.jpg' %}" style="border-radius:30px;" class="d-block w-100" height="250px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    We build beautiful and affordable houses for all classes and we have other properties
+                    available for rent. From single room self-contain to multiple bedroom housed for larger
+                    families. Our rates are unbeatable. Give us a call today to schedule a viewing.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <h1 class="text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">BUILD AND SELL HOUSE</h1>
+            <hr>
+            <div class="col-md-4">
+                <p>
+                    Real estate is one of the safest investment you can make,and unlike an intangible stock,
+                    owning a home is an investment that you actually live in-this gives many people a sense
+                    security. With the best architects available we design and build amazing modern housed
+                    for families, whether a small family unit or something for an extended family, we have
+                    got you covered.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="{% static 'imageView/view 0.jpg' %}" style="border-radius:30px;" class="d-block w-100" height="250px" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <h1 class="text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">SERVICED PLOT</h1>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="{% static 'imageView/view 12.jpg' %}" style="border-radius:30px;" class="d-block w-100" height="250px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p>
+                   We sell and develop well documented lands across the country, whether a beach front
+                    or a regular estate size land, we have what you need.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+
+
+{% endblock content %}

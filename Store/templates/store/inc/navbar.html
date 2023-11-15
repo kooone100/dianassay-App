@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>navbar</title>
+  {% load static %}
+<style>
+  .navbar{
+    border-radius: 38px;
+    margin-bottom: 100px;
+  }
+  .navbar-brand{
+    color: blue;
+  }
+  .nav-link:active{
+    background-color:white;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- NavBar Start -->
+
+<nav class="navbar navbar-expand-lg fixed-top" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/slider 1.jpg' %}" width="50px"> DianaSsay Properties</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" style="color:red;" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:red;" href="{% url 'about' %}">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " style="color:red;" href="{% url 'services' %}">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:red;" href="{% url 'collections' %}">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " style="color:red;" href="{% url 'contact' %}">Contact Us</a>
+        </li>
+      </ul>
+      <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="http://www.facebook.com/dianassayproperties"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+          <a class="nav-link" href="http://twitter.com"><i class="fa fa-twitter" style="color: #55acee;"></i></a>
+          <a class="nav-link" href="http://instagram.com"><i class="fa fa-instagram" style="color: rgb(228, 64, 95);"></i></a>
+          <a class="nav-link" href="http://youtube.com"><i class="fa fa-youtube" style="color: #ed302f;"></i></a>
+          <a class="nav-link" href="http://linkedin.com"><i class="fa fa-linkedin" style="color: #0082ca;"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- NavBar End -->
+
+  <!-- Carousel Start -->
+
+<div id="carouselExampleSlidesOnly carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner" style="padding-top:65px">
+    <div class="carousel-item active" data-bs-interval="2500" >
+      <img src="{% static 'images/slider 3.jpg' %}" class="d-block w-100" height="635" style="border-radius:38px" alt="...">
+    </div>
+     <div class="carousel-item" data-bs-interval="2500">
+      <img src="{% static 'picView/pic 3.jpg' %}" class="d-block w-100" style="border-radius:38px" height="638" alt="...">
+    </div>
+     <div class="carousel-item" data-bs-interval="2500">
+      <img src="{% static 'picView/pic 4.jpg' %}" class="d-block w-100" height="638" style="border-radius:38px" alt="...">
+    </div>
+     <div class="carousel-item" data-bs-interval="2500">
+      <img src="{% static 'images/model 1.jpg' %}" class="d-block w-100" height="638" style="border-radius:38px" alt="...">
+    </div>
+  </div>
+</div>
+
+  <!-- Carousel End -->
+</header>
+
+</body>
+</html>
+
+
+<!-- !DOCTYPE html>
+<html lang="=ee">
+<head>
+  <title>NavBar</title>
+<style>
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 100%;
+    overflow: auto;
+    font-family: Arial;
+    line-height: 60px;
+    background: #Fd9e59;
+    border-radius: 20px;
+}
+header{
+    font-size: 2em;
+    float: left;
+
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+nav{
+    margin-left: 50px;
+    float: left;
+    font-size: 15px;
+}
+nav a{
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align:center;
+ }
+nav a:hover{
+    color: gold;
+}
+.social-media{
+    float: right;
+    margin-right: 50px;
+}
+.social-media a{
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="{% url 'home' %}">DIANASSAY PROPERTIES</a>
+  </header>
+<nav>
+  <a href="{% url 'home' %}">HOME</a>
+  <a href="#">WHO WE ARE</a>
+  <a href="#">SERVICES</a>
+  <a href="{% url 'collections' %}">GALLERY</a>
+  <a href="{% url 'contact' %}">CONTACT US</a>
+</nav>
+<div class="social-media">
+  <a href="http://facebook.com"><i class="fa fa-facebook" style="color:rgb(66, 103, 178)"></i></a>
+  <a href="http://twiter.com"><i class="fa fa-twitter" style="color: rgb(29, 161, 242);"></i></a>
+  <a href="http://instagram.com"><i class="fa fa-instagram" style="color: rgb(228, 64, 95);"></i></a>
+  <a href="http://linkedin.com"><i class="fa fa-linkedin" style="color: rgb(10, 102, 194);"></i></a>
+  <a href="http://youtube.com"><i class="fa fa-youtube" style="color: rgb(205, 32, 31);;"></i></a>
+</div>
+</div>
+</body>
+</html -->
+
+
+<!-- nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand text-uppercase fst-italic" style="color:blue;" href="{% url 'home' %}">Diana Ssay Properties</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" style="color:blue" aria-current="page" href="{% url 'home' %}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:blue" href="#">WHO WE ARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:blue" href="#">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:blue" href="{% url 'collections' %}">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:blue" href="{% url 'contact' %}">CONTACT US</a>
+        </li>
+        <li>
+      </ul>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+            <a class="nav-link" href="http://twitter.com"><i class="fa fa-twitter" style="color: #55acee;"></i></a>
+            <a class="nav-link" href="http://instagram.com"><i class="fa fa-instagram" style="color: #ac2bac;"></i></a>
+            <a class="nav-link" href="http://youtube.com"><i class="fa fa-youtube" style="color: #ed302f;"></i></a>
+            <a class="nav-link" href="http://linkedin.com"><i class="fa fa-linkedin" style="color: #0082ca;"></i></a>
+        </div>
+    </div>
+  </div>
+</nav -->

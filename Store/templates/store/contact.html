@@ -1,0 +1,213 @@
+{% extends 'store/layout/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<html>
+<head>
+	<!-- IcoFont -->
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'icofont/icofont.min.css' %}" />
+
+<style type="text/css" >
+.icofont-live-support{
+    font-size: 60px;
+    color: gray;
+}
+.icofont-support-faq{
+    font-size: 60px;
+    color: blue;
+}
+.icofont-location-pin{
+    font-size: 60px;
+    color: green;
+}
+#call1{
+    color: blue;
+}
+#call2{
+    color: blue;
+}
+#call3{
+    color: blue;
+}
+#call10{
+    color: blue;
+}
+#call11{
+    color: blue;
+}
+#call12{
+    color: blue;
+}
+.btn1{
+    color: #000;
+    background-color: transparent;
+    border-color: #6BC2C1;
+    border-radius: 30px;
+    font-size:20px;
+    width: 350px;
+    height: 45px;
+}
+.txt{
+    color: black;
+    border-radius: 30px;
+    border-color: #6BC2C1;
+    width: 350px;
+    background: transparent;
+    border-style: solid;
+    text-align: left;
+    font-size: 18px;
+}
+.msg{
+    color: black;
+    border-radius: 30px;
+    border-color: #6BC2C1;
+    width: 350px;
+    background: transparent;
+    border-style: solid;
+    text-align: left;
+    font-size: 18px;
+}
+.em{
+    color:black;
+    border-radius: 30px;
+    border-color: #6BC2C1;
+    width: 350px;
+    background: transparent;
+    border-style: solid;
+    text-align: left;
+    font-size: 18px;
+}
+#card0{
+    border-radius: 30px;
+    border-color: blue;
+    background: transparent;
+    border-style: solid;
+    width: 75%;
+    height:100%;
+    margin: auto;
+}
+#card1{
+    border-radius: 30px;
+    border-color: blue;
+    background: transparent;
+    border-style: solid;
+    width: 75%;
+    height:100%;
+    margin: auto;
+}
+#card2{
+    border-radius: 30px;
+    border-color: blue;
+    background: transparent;
+    border-style: solid;
+    width: 75%;
+    height:100%;
+    margin: auto;
+}
+
+h1{
+    font-size: 38px;
+    font-style: italic;
+    font-family: trebuchet;
+    border-radius: 38px
+    /*text-align: center;*/
+}
+
+</style>
+</head>
+<div class="pt-3">
+    <div class="container">
+        <div class="row">
+            <h1 class="my-4 border-bottom text-primary pb-1" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">Contact-Us</h1>
+          <div class="col-md-6">
+            <P>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.
+                834944010775!2d-0.31386478570508664!3d5.59139463484837!2m3!1f0!2f0!3f0!
+                3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfa3a98a193163%3A0xf48574d77d60e1ae!
+                2sCharlies%20Pub%20Zero!5e0!3m2!1sen!2sgh!4v1674641196233!5m2!1sen!2sgh"
+                width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </P>
+          </div>
+          <div class="col-md-6">
+              <div class="card" style="background:transparent;">
+                  <div class="card-header">
+                      <div class="card-body">
+                          <img src="{% static 'images/model 1.jpg' %}" style="width:95%">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="row mt-5 pt-5" style="background: url('static/images/bg-1.jpg') no-repeat fixed; background-size:cover; border-radius:38px;">
+            <div class="col-md-4 pb-5">
+                <div class="card-shadow" id="card0" align="center">
+                     <i class="icofont-live-support"></i>
+                    <div class="card-body">
+                        <h5 class="card-text" id="call10">Call</h5>
+                    </div>
+                        <p id="call1">
+                            +233 246649591
+                            <br>
+                            +233 509392106
+                            <br>
+                            <br>
+                        </p>
+                </div>
+            </div >
+            <div class="col-md-4 pb-5">
+                <div class="card-shadow" id="card1" align="center">
+                    <i class="icofont-support-faq"></i>
+                    <div class="card-body">
+                        <h5 class="card-text" id="call11">Email</h5>
+                    </div>
+                    <p id="call2">
+                        Dianassay1@gmail.com
+                        <br>
+                        Dianassay@yahoo.com
+                        <br>
+                        <br>
+                    </p>
+                </div >
+            </div >
+            <div class="col-md-4 pb-5">
+                <div class="card-shadow" id="card2" align="center">
+                    <i class="icofont-location-pin"></i>
+                    <div class="card-body">
+                        <h5 class="card-text" id="call12">Location</h5>
+                    </div>
+                    <p id="call3">
+                        Kasoa Millenium City
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <H5 style="color:#fffff;" class="pb-4" align="center">Working Hours - Mon-Sat, 9am-6pm</H5>
+
+        <div class="row" style="background: url('static/images/bg-1.jpg') no-repeat fixed; background-size:cover; border-radius:38px;">
+        <div class="col-md-12">
+            <h1 class="my-4 border-bottom" style="text-align:center; font-size:25px">SEND US A MAIL</h1>
+            <form method="POST" style="align-items:center; width:300px; margin:0 auto; margin-bottom:20px;">
+                {% csrf_token %}
+                <h1 style="red;, text-align:left;"></h1>
+                 <br>
+                <input type="text" name="name" class="txt" placeholder="Subject"><br>
+                 <br>
+                 <input type="email" name="email" class="em" placeholder="Pls enter your email address"><br>
+                 <br>
+               <textarea placeholder="Message" name="message" class="msg" cols="10" rows="1"></textarea><br>
+                <br>
+                <button class="btn1">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+</html>
+
+{% endblock content %}

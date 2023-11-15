@@ -1,0 +1,101 @@
+{% extends 'store/layout/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<html>
+<head>
+    <title>
+
+    </title>
+    <!-- IcoFont -->
+	<link rel="stylesheet" type="text/css" href="{% static 'icofont/icofont.min.css' %}" />
+<style>
+    h1{
+        font-size: 38px;
+        font-style: italic;
+        font-family: trebuchet;
+        border-radius:38px;
+        /*text-align: center;*/
+    }
+    .card:hover{
+        transform:scale(1.8);
+        z-index:4;
+    }
+</style>
+</head>
+<div class="pt-3">
+    <div class="container">
+        <div class="row">
+            <h1 class="my-4 border-bottom pb-1 text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">Who We Are</h1>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header"></div>
+                        <div class="card-body">
+                            <img src="{% static 'picView/pic 3.jpg' %}" style="border-radius:30px;" class="d-block w-100" height="250px" alt="...">
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <p style="margin-top:78px;">
+                    Dianassay Properties was established in 2013 as a real estate sales company. we couple
+                    our expertise in large-scale mixed-use properties, commitment to design innovation,
+                    quality and efficiency, and local market insight, to bring or vision to life. To date
+                    we have invested a lot in our local projects.
+                    At Dianassay Properties, we develop residential and retail properties that create urban
+                    communities and accentuate the benefits of modern living. Our properties effortlessly
+                    fit within a city, contribute to the local economy and accelerate the development of
+                    the surrounding areas.
+                    Dianassay Properties prides itself on developing properties that transform communities.
+                    Working with the best architects and designers, we are able to create projects that make
+                    an everlasting impacting not only within the local communities, but within the cities
+                    themselves. With over 7 years' experience in the real estate industry, we use our
+                    expertise to create urban destinations. Featuring international design principles and
+                    the latest in modern and innovative architecture, we develop unparalleled properties
+                    that become integral to each neighbourhood. Each project contributes to the
+                    ever-changing skylines in the cities.
+                </p>
+            </div>
+        <div class="row" style="margin-top:65px;">
+            <h1 class="my-4 border-bottom pb-1 text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">Our Vision</h1>
+            <div class="col-md-4">
+                <p style="margin-top:78px;">
+                    Dianassay Properties strives to create vibrant urban communities that change the
+                    landscape of their environment.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"></div >
+                        <div class="card-body">
+                           <img src="{% static 'imageView/view 0.jpg' %}" style="border-radius:20px;" class="d-block w-100" height="250px" alt="...">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:65px;">
+            <h1 class="text-primary" style="background: url('static/images/bg-2.jpg') no-repeat fixed; background-size:cover;">Our Mission</h1>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="{% static 'images/model 1.jpg' %}" style="border-radius:30px;"  class="d-block w-100" height="250px" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p style="margin-top:78px;">
+                    With Dianassay Properties goal to make "your comfort, our priority", we approach each
+                    project with an emphasis on sustainability for both residents and the environments.
+                    Each community is constructed to reduce its impact on the local environment while
+                    ensuring that it provides the latest in integrated environmental benefits.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</html>
+
+
+{% endblock content%}

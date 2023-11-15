@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, intial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="responsivenav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="http://fakedomain.com/smilemachine/html.css" />
+    <style>
+         #pik1{
+            border-radius: 30px;
+        }
+        .card{
+            border-radius: 30px;
+            border-color: transparent;
+        }
+        h1{
+            text-color:blue;
+            font-size: 45px;
+            font-style: italic;
+            font-family: trebuchet;
+        }
+         .card-text{
+            color: blue;
+        }
+        .whatsapp-chat{
+            position: fixed;
+            bottom: 02% !important;
+            left: 01% !important;
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+<body>
+        {% include 'store/inc/navbar.html' %}
+
+        {% block content %}
+
+        {% endblock content %}
+        <a  class="whatsapp-chat" href="https://wa.me/+233244037682?text=I'm%20are%20you%20interested%20in%20owning%20or%20%20or%20renting%20a%20house">
+            <img src="{% static 'images/logo-wa.png' %}" alt="whatsapp-logo" width="75" />
+        </a>
+        <script src="https://kit.fontawesome.com/2c32915997.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!--script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-9ddf4631-5e9a-4277-b649-6143ba0040d5" data-elfsight-app-lazy></div -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        {% block script %}
+
+        {% endblock script %}
+{% include 'store/inc/footer.html' %}
+</body>
+</html>
